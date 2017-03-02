@@ -14,19 +14,15 @@ $result = $conn->query($sql);
 if ($result->num_rows == 1) 
 {
     echo "login successful welcome ". $username;
-    startSession($username);
+    //startSession($username);
 } 
 else 
 {
     echo "Invalid username or password";
 }
 
-header('Location: http://localhost/MemberArena/MemberLogin%20-%20Copy/index.html');
+header('Location: http://localhost/MemberArena/MemberLogin/index.html');
 
-void startSession($username)
-{
-  
 
-}
 
 ?>
