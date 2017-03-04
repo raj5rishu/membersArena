@@ -51,7 +51,7 @@ $img="user.png";
 						
 					</ul>
 				</li>
-				<li class="waves-effect waves-light" ><img src="../memberLogin/img/team/<?php echo $img?>" style="border-radius:50%; width:100%; padding-top:10%"  >  </img></li>
+				<li class="waves-effect waves-light" ><img src="../memberLogin/img/team/<?php echo $img?>" style="border-radius:50%; width:100%; padding:10%"  >  </img></li>
 				
 				
 			</ul>
