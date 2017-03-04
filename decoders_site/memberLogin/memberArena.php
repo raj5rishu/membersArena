@@ -62,31 +62,32 @@
 		</div>
 		
 			<div class="col-sm-2 Left_Rectangle">
-				<div class="Button">
+				<div id="profile" class="Button">
 					<p class="ButtonText" style="top:30%;">Profile</p>
 				</div>
-				<div class="Button">
+				<div id="event" class="Button">
 					<p class="ButtonText" style="top:30%;">Event</p>
 				</div>
-				<div class="Button">
+				<div id="articles" class="Button">
 					<p class="ButtonText" style="top:30%;">Review Articles</p>
 				</div>
-				<div class="ButtonInactive">
+				<div id="legacy" class="Button">
+					<p class="ButtonText" style="top:30%;">Our Legacy</p>
+				</div>
+				<div id="admin" class="ButtonInactive">
 					<p class="ButtonText " style="top:30%;">Admin. Controls</p>
 				</div>
+				
 				<div style="bottom: 0px; position:absolute;">
 					<p class="ButtonText"><u><a href="logout.php">Logout</a></u></p>
 				</div>
 			</div>
-			<div class="col-sm-10" style="height:inherit;">
-				
-				
-				
-				
-				
+			<div id="output" class="col-sm-10" style="height:inherit;">
 				
 				
 			</div>
 			
+<script type="text/javascript" src="js/profile.js"></script>
+ 
 </body>
 </html>
