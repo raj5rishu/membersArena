@@ -20,15 +20,15 @@ opt.addEventListener("click",getSelectedValue,false);
 function recruitRend()
 {
  document.getElementById("tabOut").style.display="none";
- document.getElementById("profOut").style.display="block";
+ document.getElementById("recruitOut").style.display="block";
  
 }
 
 function profRend()
 {
-  document.getElementById("profOut").style.display="none";
+  document.getElementById("recruitOut").style.display="none";
   document.getElementById("tabOut").style.display="block";
-  callFile("memProf.php"); 
+  callFile("ajax_calls/memProf.php"); 
 }
 
 function getSelectedValue()

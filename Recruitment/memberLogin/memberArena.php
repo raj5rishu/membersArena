@@ -82,15 +82,17 @@
 				</div>
 			</div>
 			<div id="output" class="col-sm-10" style="height:inherit;">
-			     <div id="profOut" style="display:None; position:relative" >
-                  <h1 class="h1-responsive" style="font-family:Tahoma;"> <u>DeCoders Recruitment 2k17</u></h1>
+			     <div id="recruitOut" style="display:None; position:relative" >
+                  <center><h1 class="h1-responsive" style="font-family:Tahoma;"> <u>DeCoders Recruitment 2k17</u></h1></center>
 				   <br>
 				  <select id="slct" > 
-				   <option value="">Select</option>
-				   <option value="view">View All</option>
-				   <option value="round1">First Round</option>
-				   <option value="interview">Interview</option>
-				   <option value="remaining">Remaining</option>
+				   <option value="">What you want?</option>
+				   <option value="view">View all registrations</option>
+				   <option value="round1">Shortlisted after first round</option>
+				   <option value="interview">Shortlisted for interview</option>
+				   <option value="interviewed">Already interviewed candidates</option>
+				   <option value="review">Candidates for 2nd interview</option>
+				   <option value="remaining">Remaining for interview</option>
 				  </select>
 				  
 				 </div>
