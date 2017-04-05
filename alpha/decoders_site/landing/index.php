@@ -10,6 +10,7 @@
     <title>Decoders for Registration</title>
 	<link rel="icon" href="../commonResources/img/title.jpg">
     <?php require_once "../commonResources/includeCSS.php";?>
+	 <link href="../commonResources/css/um-template.min.css" rel="stylesheet">
 	
 	
 </head>
@@ -266,23 +267,74 @@
 	
 		<div class="row">
 			<!--card 1 start-->
-				<div class="col-md-4">
+				<div class="col-md-4 wow fadeInLeft">
 					<br>
 					<!--Card Start-->
 						<div class="card">
+							<div class="um-events-tile">
+									<div class="row story-heading">
+										<div class="col-md-12">
+											<h5 class="pull-left">Upcoming Events</h5>
 
-							<!--Card image-->
-							<img class="img-fluid" src="../commonResources/img/background.jpg" alt="Card image cap">
-							<!--Card image end-->
+											<p class="text-right small pull-right" style="padding-top: 20px;">Today is Date </p>
+										</div>
+									</div>
+									<div id="homepage-events">
 
-							<!--Card content-->
-							<div class="card-block">
-								<!--Title-->
-								<h4 class="card-title">Card title</h4>
-								<!--Text-->
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-								<a href="#" class="btn btn-primary">Button</a>
-							</div>
+										<div class="row event ">
+
+											<div class="col-sm-10 col-xs-9 text-left pull-right story-content">
+												<strong>
+												   <a href="">
+													<h6 class="title">Event Title and Description</h6>
+												   </a>
+												</strong>
+												
+
+											  
+											</div>
+											<div class="col-sm-2 col-xs-3 text-center pull-left story-date" aria-hidden="true">
+												<div class="date-box">
+													<div class="month">
+													 Jan   
+													</div>
+													<div class="date">
+													 21   
+													</div>
+												</div>
+											</div>
+											
+											
+										</div>
+										<div class="row event ">
+
+											<div class="col-sm-10 col-xs-9 text-left pull-right story-content">
+												<strong>
+												   <a href="">
+													<h6 class="title">Event Title and Description</h6>
+												   </a>
+												</strong>
+												
+
+											  
+											</div>
+											<div class="col-sm-2 col-xs-3 text-center pull-left story-date" aria-hidden="true">
+												<div class="date-box">
+													<div class="month">
+													 Jan   
+													</div>
+													<div class="date">
+													 21   
+													</div>
+												</div>
+											</div>
+											
+											
+										</div>
+										
+									</div>
+									
+							 </div>
 							<!--card content end-->
 						</div>
 						<!--Card End-->
@@ -294,19 +346,7 @@
 						<!--Card Start-->
 						<div class="card">
 
-							<!--Card image-->
-							<img class="img-fluid" src="../commonResources/img/background.jpg" alt="Card image cap">
-							<!--Card image end-->
-
-							<!--Card content-->
-							<div class="card-block">
-								<!--Title-->
-								<h4 class="card-title">Card title</h4>
-								<!--Text-->
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-								<a href="#" class="btn btn-primary">Button</a>
-							</div>
-							<!--card content end-->
+								<!-- start feedwind code --> <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" data-fw-param="21503/"></script> <!-- end feedwind code -->	<!--card content end-->
 						</div>
 						<!--Card End-->
 				</div>
@@ -317,19 +357,8 @@
 						<!--Card Start-->
 						<div class="card">
 
-							<!--Card image-->
-							<img class="img-fluid" src="../commonResources/img/background.jpg" alt="Card image cap">
-							<!--Card image end-->
+								<!-- start feedwind code --> <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" data-fw-param="21499/"></script> <!-- end feedwind code -->
 
-							<!--Card content-->
-							<div class="card-block">
-								<!--Title-->
-								<h4 class="card-title">Card title</h4>
-								<!--Text-->
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-								<a href="#" class="btn btn-primary">Button</a>
-							</div>
-							<!--card content end-->
 						</div>
 						<!--Card End-->
 				</div>
