@@ -69,6 +69,12 @@
 				<div id="event" class="Button">
 					<p class="ButtonText" style="top:30%;">Event</p>
 				</div>
+				<div id="event_span" style="display:none">
+					<p id="ce" class="ButtonText" style="top:30%;">Create event</p>
+					<p id="de" class="ButtonText" style="top:30%;">Delete event</p>
+					<p id="viewEvent" class="ButtonText" style="top:30%;">View all events</p>
+					<p id="viewReg"class="ButtonText" style="top:30%;">View registrations of event</p>
+				</div>
 				<div id="review" class="Button">
 					<p class="ButtonText" style="top:30%;">Review Articles</p>
 				</div>
