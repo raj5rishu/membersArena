@@ -1,3 +1,28 @@
+<?php
+$month=array('Jan','Feb','March','April','May','June','July','Aug','Sep','Oct','Nov','Dec');
+require_once 'connect.inc.php';
+$sql="Select event_id, event_name, month(event_date) as month  , day(event_date) as day , description from event";
+$result=$conn->query($sql);
+$len=mysqli_num_rows($result);
+$calofevents=array();
+$i=0;
+while($row=$result->fetch_assoc())
+{   
+	 $calofevents[$i][0]=$row["event_id"];	
+     $calofevents[$i][1]=$row["event_name"];
+	 $calofevents[$i][2]=$row["description"];			
+	 $calofevents[$i][3]=$month[$row["month"]-1];
+	 $calofevents[$i][4]= $row["day"];
+				
+	$i++;								
+	
+}
+
+//echo $calofevents[0][1]." ".$calofevents[0][2];
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -276,61 +301,50 @@
 										<div class="col-md-12">
 											<h5 class="pull-left">Upcoming Events</h5>
 
-											<p class="text-right small pull-right" style="padding-top: 20px;">Today is Date </p>
+											<p class="text-right small pull-right" style="padding-top: 20px;">Today is <?php echo date("Y/m/d"); ?> </p>
 										</div>
 									</div>
 									<div id="homepage-events">
+									
+										<?php  
+										for($i=0;$i<$len;$i++){
+										   
+										echo '<div class="row event ">';
 
-										<div class="row event ">
-
-											<div class="col-sm-10 col-xs-9 text-left pull-right story-content">
-												<strong>
-												   <a href="">
-													<h6 class="title">Event Title and Description</h6>
-												   </a>
-												</strong>
+										echo '<div class="col-sm-10 col-xs-9 text-left pull-right story-content">';
+										echo '		<strong>';
+										echo  '		   <a href="event.php?event_id='.$calofevents[$i][0].'">';
+										echo	'		<h6 class="title">'.$calofevents[$i][1].'</h6>';
+										echo '		   </a>';
+										//echo  ' <p style="font-size:10%">'.$calofevents[$i][2].'</p>';
+										echo		'</strong>';
 												
 
 											  
-											</div>
-											<div class="col-sm-2 col-xs-3 text-center pull-left story-date" aria-hidden="true">
-												<div class="date-box">
-													<div class="month">
-													 Jan   
-													</div>
-													<div class="date">
-													 21   
-													</div>
-												</div>
-											</div>
+										echo '	</div>';
+										echo '	<div class="col-sm-2 col-xs-3 text-center pull-left story-date" aria-hidden="true">';
+										echo '		<div class="date-box">';
+										echo '			<div class="month">';
+										echo			 $calofevents[$i][3];   
+										echo	'		</div>';
+										echo '			<div class="date">';
+										echo 		$calofevents[$i][4];   
+										echo '			</div>';
+										echo '		</div>';
+										echo '	</div>';
 											
 											
-										</div>
-										<div class="row event ">
+										echo '</div>';
+									   }
 
-											<div class="col-sm-10 col-xs-9 text-left pull-right story-content">
-												<strong>
-												   <a href="">
-													<h6 class="title">Event Title and Description</h6>
-												   </a>
-												</strong>
-												
-
-											  
-											</div>
-											<div class="col-sm-2 col-xs-3 text-center pull-left story-date" aria-hidden="true">
-												<div class="date-box">
-													<div class="month">
-													 Jan   
-													</div>
-													<div class="date">
-													 21   
-													</div>
-												</div>
-											</div>
-											
-											
-										</div>
+										?>
+										
+										
+										
+										
+										
+										
+										
 										
 									</div>
 									

@@ -8,6 +8,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 		$desc=$_POST['desc'];
 		require_once 'connect.inc.php';
 		$query = "INSERT INTO `event` (`event_name`,`event_date`,`description`,`mem_id`) values ('$name','$date','$desc','$user')";
+		echo $query;
 		if($result = $conn->query($query))
 			header ('Location: Success.php');
 		else
@@ -26,7 +27,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 		</div>
 		<div class="form-group">
 			<label class="form-label">DATE</label>
-			<input type="text" class="form-control" id="" name="date" placeholder="Enter the event's date">
+			<input type="date" class="form-control" id="" name="date" placeholder="Enter the event's date">
 		</div>	
 		<div class="form-group">
 					<label class="form-label">EVENT DESCRIPTION</label><br>
