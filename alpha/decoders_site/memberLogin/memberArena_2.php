@@ -1,5 +1,5 @@
 <?php 
-	$img="../commonResources/img/user.png";
+	$img="user.png";
 	$un="Member";
 	require_once 'connect.inc.php';
 	session_start();
@@ -66,26 +66,40 @@
 				<div id="profile" class="Button">
 					<p class="ButtonText" style="top:30%;">Profile</p>
 				</div>
-				<div id="event" class="Button">
-					<p class="ButtonText" style="top:30%;">Event</p>
+				<div id="recruitment" class="Button">
+					<p class="ButtonText" style="top:30%;">Recruitment</p>
 				</div>
-				<div id="review" class="Button">
-					<p class="ButtonText" style="top:30%;">Review Articles</p>
+			
+				<div id="legacy" class="Button">
+					<p class="ButtonText" style="top:30%;">Our Legacy</p>
 				</div>
 				<div id="admin" class="ButtonInactive">
 					<p class="ButtonText " style="top:30%;">Admin. Controls</p>
 				</div>
+				
 				<div style="bottom: 0px; position:absolute;">
 					<p class="ButtonText"><u><a href="logout.php">Logout</a></u></p>
 				</div>
 			</div>
-			
-			
 			<div id="output" class="col-sm-10" style="height:inherit;">
-			     
+			     <div id="profOut" style="display:None; position:relative" >
+                  <h1 class="h1-responsive" style="font-family:Tahoma;"> <u>DeCoders Recruitment 2k17</u></h1>
+				   <br>
+				  <select id="slct" > 
+				   <option value="">Select</option>
+				   <option value="view">View All</option>
+				   <option value="round1">First Round</option>
+				   <option value="interview">Interview</option>
+				   <option value="remaining">Remaining</option>
+				  </select>
+				  
+				 </div>
+				 
 				 
 				 <div id="tabOut" style="display:none ">
-                   
+                  <h2 class="h2-responsive">Welcome Member</h2><br>
+				   
+				  
 
 				 </div>
 				
