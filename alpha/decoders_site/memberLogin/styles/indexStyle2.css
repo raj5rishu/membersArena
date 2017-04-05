@@ -1,0 +1,98 @@
+.top{
+  border-width: 7.27px;
+  border-color: rgb(48, 48, 152);
+  border-style: solid;
+  background-color: rgb(100, 100, 208);
+  position: relative;
+  left: 0px;
+  top: -2px;
+  width: 100%;
+  /*height: 110px;*/
+ }
+.text{
+  font-family: "Trajan Pro";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  position: relative;
+  z-index: 23;
+  left: -5px;
+  text-shadow: 2px 2px 2px #ffffff;
+}
+.User_Bar {
+  position:relative;
+  border-width: 7.27px;
+  border-color: rgb(48, 48, 152);
+  border-style: solid;
+  background-color: rgb(48, 48, 152);
+  width: 100%;
+  z-index: 3;
+  top: -2px;
+ }
+
+ .Welcome__username {
+  font-size: 18px;
+  font-family: "Trajan Pro";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  position: relative;
+  right: 0%;
+  z-index: 4;
+}
+.Left_Rectangle {
+  border-width: 4.38px;
+  border-color: rgb(22, 22, 89);
+  border-style: solid;
+  background-color: rgb(48, 48, 152);
+  position: relative;
+  top:-2px;
+  height:500px;
+  left: 0px;
+ }
+.Button:active {
+  background-image: url("../img/ActiveButton.png");
+  background-size:100%;
+  position: relative;
+  top:-4px;
+  left:-18px;
+  width: 120%;
+  height: 56px;
+}
+.Button:hover {
+  background-image: url("../img/ActiveButton.png");
+  background-size:100%;
+  position: relative;
+  top:-4px;
+  left:-18px;
+  width: 120%;
+  height: 56px;
+}
+.Button {
+  background-image: url("../img/Button.png");
+  background-size:100%;
+  position: relative;
+  top:-4px;
+  left:-18px;
+  width: 120%;
+  height: 56px;
+}
+.ButtonInactive{
+  background-image: url("../img/ButtonInactive.png");
+  background-size:100%;
+  position: relative;
+  top:-4px;
+  left:-18px;
+  width: 120%;
+  height: 56px;
+}
+.ButtonText{
+  font-size: 15px;
+  font-family: "Arial";
+  color: rgb(255, 255, 255);
+  text-align: center;
+  position: relative;
+  font-weight: bold;
+}
+
+
+
+
