@@ -9,9 +9,9 @@
 					<div class="col-sm-6" style="padding-top:6%">
 						<div class="col-sm-6">
 							<ul>
-								<a href="../aboutUs"><li>About Decoders</li></a>
-								<a href="../aboutUs"><li>Members</li></a>
-								<a href="../contactUs"><li>Contact</li><a>
+								<a><li>About Decoders</li></a>
+								<a><li>Policy</li></a>
+								<a><li>Contact</li><a>
 								<a><li>Upcomming Events</li></a>
 							</ul>
 						</div>

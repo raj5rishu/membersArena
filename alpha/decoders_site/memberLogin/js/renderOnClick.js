@@ -7,8 +7,6 @@ var ce=document.getElementById("ce");
 var de=document.getElementById("de");
 var viewEvent=document.getElementById("viewEvent");
 var viewReg=document.getElementById("viewReg");
-var display = document.getElementById("display");
-var subForm = document.getElementById("subForm");
 
 //Event Listeners
 
@@ -18,18 +16,11 @@ ce.addEventListener("click", ceRend,false);
 de.addEventListener("click", deRend,false);
 viewEvent.addEventListener("click", viewEventRend,false);
 viewReg.addEventListener("click", viewRegRend,false);
-subForm.addEventListener("click",printReg,false);
 
-function printReg()
-{
-	var event_id = document.getElementById("event_id").value;
-	callFile("ajax_calls/viewReg.php"+"?option="+event_id);
-	tabOut.style.display="block";
-}
 function ceRend()
 {
 	document.getElementById("tabOut").style.display="block";
-	callFile("ajax_calls/ce.php");
+  callFile("ajax_calls/ce.php");
 }
 
 function deRend()
@@ -44,8 +35,8 @@ function viewEventRend()
 }
 function viewRegRend()
 {
-	document.getElementById("display").style.display="block";
-	document.getElementById("tabOut").style.display="none";
+	document.getElementById("tabOut").style.display="block";
+  callFile("ajax_calls/viewReg.php");
 }
 
 

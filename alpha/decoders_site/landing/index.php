@@ -323,7 +323,7 @@ while($row=$result->fetch_assoc())
 											  
 										echo '	</div>';
 										echo '	<div class="col-sm-2 col-xs-3 text-center pull-left story-date" aria-hidden="true">';
-										echo '		<div class="date-box">';
+										echo '		<div class="date-box" id="posts">';
 										echo '			<div class="month">';
 										echo			 $calofevents[$i][3];   
 										echo	'		</div>';
@@ -353,6 +353,7 @@ while($row=$result->fetch_assoc())
 						</div>
 						<!--Card End-->
 				</div>
+	
 				<!--card 1 end-->
 				<!--card 2 start-->
 				<div class="col-md-4 wow fadeInUp">

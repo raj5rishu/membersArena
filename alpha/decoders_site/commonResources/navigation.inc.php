@@ -11,22 +11,22 @@ $img = "../commonResources/img/user.png";
 				<span class="icon-bar"></span>
 			</button>
 																
-			<a href="../landing"><h5 class="top-left">DeCoders</h5></a>
+			<a href="#"><h5 class="top-left">DeCoders</h5></a>
 		</div>
 		<div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" aria-expanded="false" style="height: 1px ;float:right" >
 			<ul class="nav navbar-nav">
-				<li class="active"><a href="#" class="waves-effect waves-light">Contribute article<span class="sr-only">(current)</span></a></li>
-				<li><a href="../contactUs" class="waves-effect waves-light">Contact Us</a></li>
+				<li class="active"><a href="contribute.php" class="waves-effect waves-light">Contribute article<span class="sr-only">(current)</span></a></li>
+				<li><a href="#" class="waves-effect waves-light">Contact Us</a></li>
 				<li class="dropdown">
 				<a href="#" class="dropdown-toggle waves-effect waves-light" data-toggle="dropdown" role="button" aria-expanded="false">More</a>
 					<ul class="dropdown-menu pull-right"  role="menu">
-					    <li><a href="#">Aptitude</a></li>
-						<li><a href="#">C/C++ Articles</a></li>
-						<li><a href="#">Data Structures</a></li>
-						<li><a href="#">Algorithms</a></li>
-						<li><a href="#">Interview Experiences</a></li>
+					    <li><a href="article.php?domain=apti">Aptitude</a></li>
+						<li><a href="article.php?domain=cprog">C/C++ Articles</a></li>
+						<li><a href="article.php?domain=ds">Data Structures</a></li>
+						<li><a href="article.php?domain=ada">Algorithms</a></li>
+						<li><a href="article.php?domain=intexp">Interview Experiences</a></li>
 						<li class="divider"></li>
-						<li><a href="../aboutUs">Members</a></li>
+						<li><a href="#">Members</a></li>
 						<!--<li class="divider"></li>
 						<li><a href="#">Testimonials</a></li>-->
 					</ul>
